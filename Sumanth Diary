@@ -1,4 +1,6 @@
 Security system using open cv
+
+Aug-03:
 Doing/ Done detecting face from video stream using haar cascade model.
 
 What is Haarcascade?
