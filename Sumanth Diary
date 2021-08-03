@@ -1,0 +1,7 @@
+Security system using open cv
+Doing/ Done detecting face from video stream using haar cascade model.
+
+What is Haarcascade?
+A.Haar Cascade is a machine learning-based approach where a lot of positive and negative images are used to train the classifier
+We use haar cascade to identify faces in an image or real time video.
+Accuracy of haar cascade is around 89%.
