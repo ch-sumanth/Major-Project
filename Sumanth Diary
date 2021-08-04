@@ -7,3 +7,7 @@ What is Haarcascade?
 A.Haar Cascade is a machine learning-based approach where a lot of positive and negative images are used to train the classifier
 We use haar cascade to identify faces in an image or real time video.
 Accuracy of haar cascade is around 89%.
+
+
+Aug-04:
+searching "How to capture images when face is detected".
