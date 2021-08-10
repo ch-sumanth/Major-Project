@@ -1,1 +1,108 @@
 Security System using OpenCV
+
+
+Aug-03:
+referring how security system help in real time problems and solving in a different way.
+
+some of the IEEE documents and articles mention in below.
+
+https://ieeexplore.ieee.org/document/723792
+
+https://www.analyticssteps.com/blogs/an-overview-to-computer-vision-thats-redefining-surveillance
+
+searching for an detection model in image processing.
+
+referring about a  various object detection and human detection.
+
+https://towardsdatascience.com/object-detection-with-tensorflow-model-and-opencv-d839f3e42849
+
+and finnaly comes with a haarcascade model.
+
+What is Haarcascade?
+A.Haar Cascade is a machine learning-based approach where a lot of positive and negative images are used to train the classifier
+We use haar cascade to identify faces in an image or real time video.
+Accuracy of haar cascade is around 89%.
+
+The main goal to select a haarcascade model is because it has already predefine model for detect human face and giving a accuracy around 80-95%.
+
+so i want to take to use haarcascade model in my project.
+
+
+
+
+
+Aug-04:
+
+reffering to "how an algorithm detect the human and what are the features it can extract to detect?"
+
+    Detecting human beings accurately in a visual surveillance system is crucial for diverse application areas including abnormal event detection, human gait characterization,
+   congestion analysis, person identification, gender classification and fall detection for elderly people. The first step of the detection process is to 
+   detect an object which is in motion. Object detection could be performed using background subtraction, optical flow and spatio-temporal filtering techniques.
+   
+ i came to knew that with the help of serveillance system and harcascade model it will detect the human face 
+ but here problem is when human face poster is pasted on the wall it will detect that also.
+  so i need a another solution to solve this.
+
+
+
+
+Aug-10:
+
+From above problem 
+I want to implement a motion detection and human detection combined.
+
+Referring for a motion detection
+
+https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor
+
+From this above article i came to knew about that PIR sensor
+
+what is pir sensor?
+PIR sensors allow you to sense motion, almost always used to detect whether a human has moved in or out of the sensors range. They are small, inexpensive, 
+low-power, easy to use and don't wear out. For that reason they are commonly found in appliances and gadgets used in homes or businesses. 
+They are often referred to as PIR, "Passive Infrared", "Pyroelectric", or "IR motion" sensors.
+
+working of pir sensor?
+
+The passive infrared sensor does not radiate energy to space. It receives the infrared radiation from the human body to make an alarm. Any object with temperature 
+is constantly radiating infrared rays to the outside world
+
+How to implement a hardware sensor with opencv?
+
+Here i'm mention document link to shows how to connect with hardware sensor and  opencv.
+
+https://aip.scitation.org/doi/pdf/10.1063/1.5133928
+
+
+Aug -11:
+
+searching for a platform to deploy opencv code and motion sensor
+
+After referring all i came to knew that
+
+visual studio express edition is best platform to implement my opencv code
+
+https://docs.opencv.org/4.5.2/dd/d6e/tutorial_windows_visual_studio_opencv.html
+
+I mention above link which i had refered to choose visual studio platform
+
+
+learning about how visual will work
+and how to deploy our project work
+
+https://www.youtube.com/watch?v=1CgsMtUmVgs
+
+learning about how arduino  work with pir sensor 
+and searching about how connection to be coonect  to work perfect
+
+https://create.arduino.cc/projecthub/electropeak/pir-motion-sensor-how-to-use-pirs-w-arduino-raspberry-pi-18d7fa
+
+
+
+
+
+
+
+
+
+
