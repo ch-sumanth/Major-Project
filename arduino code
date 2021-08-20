@@ -1,0 +1,82 @@
+
+#define LED1 3
+#define LED2 4
+#define LED3 5
+#define LED4 6
+#define LED5 7
+#define LED6 8
+#define LED7 9
+#define LED8 10
+#define LED9 11
+#define buzzer 2
+int LED[] = {3, 4, 5, 6, 7, 8, 9, 10, 11};
+int red[] = {8, 9, 10, 11};
+int blue[] = {7, 6, 5, 4, 3};
+unsigned int i, j, n, k;
+const int x = 400, y = 1000, t1 = 7, t2 = 500; int pirsensor = 12; 
+int flag = 0; 
+char data;
+void setup()
+{
+  Serial.begin(9600); 
+    pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
+  pinMode(LED5, OUTPUT);
+  pinMode(LED6, OUTPUT);
+  pinMode(LED7, OUTPUT);
+  pinMode(LED8, OUTPUT);
+  pinMode(LED9, OUTPUT);
+  pinMode(buzzer, OUTPUT);
+  pinMode(pirsensor, INPUT); 
+  digitalWrite(pirsensor, LOW);  
+}
+void loop()
+{
+
+  data=Serial.read();
+   while( data== 'c')
+   {
+    k = (y - x) / 10;
+ for (j = 1; j <= 9; j++) {
+    n = 0;
+    for (i = x; i <= y; i += 2) {
+
+      tone(buzzer, i);
+      if (i % k == 0 && n<5) {
+        digitalWrite(blue[n] , HIGH);
+        digitalWrite(red[n] , HIGH);
+        n++;
+      }
+      delayMicroseconds(t2);
+    }
+    n = 5;
+    for (i = y; i >= x; i -= 2) {
+
+      tone(buzzer, i);
+      if (i % k == 0 && n>0) {
+        n--;
+        digitalWrite(blue[n] , LOW);
+        digitalWrite(red[n] , LOW);
+
+      }
+      delayMicroseconds(t2);
+    }
+  }
+   }
+  if( (digitalRead(pirsensor) == HIGH)&& (flag == 0))
+  {
+    Serial.println("intruder detected"); 
+    flag = 1; 
+  }
+  if( (digitalRead(pirsensor) == LOW)&& (flag == 1))
+  {
+    Serial.println("no Intruder"); 
+    flag = 0; 
+  }
+  
+}
+ 
+ 
+ 
