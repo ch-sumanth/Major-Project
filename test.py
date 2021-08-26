@@ -1,0 +1,4 @@
+import dropbox
+dbx="sl.A3MM7_RO2md_rdM1SU0QOC_0k92NhgDScPJ8evDN3Ut46YW5FU6O3grcfLP2dbMcSEUaVlxqsu7yIeurx4fNpY_CCrIoU-NWuMKt8ttYhYnhe8IC4S9k4y3Z5jL0p7A2caKLs89Sc_9H"
+d=dropbox.Dropbox(dbx)
+d.users_get_account(dbx)
