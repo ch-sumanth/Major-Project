@@ -51,4 +51,5 @@ images are capturing when face is being detected. and using the dropbox api key 
 completed implementing 
 the output of arduino is being read by python by the Pyserial Library 
 from that output the python program is getting the required output
-ie., detecting and sending the mail to the email.
+ie., detecting and sending the mail to the email and turns on the buzzer and led's.
+after detecting when rfid is detected the buzzer and led's will turn off.
