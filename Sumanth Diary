@@ -47,3 +47,8 @@ https://aip.scitation.org/doi/pdf/10.1063/1.5133928
 
 Aug 25:
 images are capturing when face is being detected. and using the dropbox api key the captured photos are being transfered to the dropbox account.
+
+completed implementing 
+the output of arduino is being read by python by the Pyserial Library 
+from that output the python program is getting the required output
+ie., detecting and sending the mail to the email.
